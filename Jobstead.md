@@ -1,8 +1,8 @@
 # Jobstead
 
-*The community-grown job-search playbook you own and carry: hard-won lessons and tailoring strategy in one portable markdown file, AI-ready for any chat.*
+_The community-grown job-search playbook you own and carry: hard-won lessons and tailoring strategy in one portable markdown file, AI-ready for any chat._
 
-**File version:** 3.2 · **Schema:** v2.2 · **Last synced:** 2026-06-03
+**File version:** 3.3 · **Schema:** v2.2 · **Last synced:** 2026-06-09
 
 Jobstead is a portable, mergeable context for an AI-assisted job search. Paste it into a new chat to bootstrap, share it between users running the same playbook, merge it with other copies without losing information.
 
@@ -13,11 +13,14 @@ Jobstead is a portable, mergeable context for an AI-assisted job search. Paste i
 ## Attribution
 
 ### Creators (immutable)
+
 This list must not be modified, reordered, or removed in any merge.
+
 - **adibas03**
 - **Claude (Anthropic)**
 
 ### Contributors (append-only)
+
 Users who have made substantive changes to the Playbook artifact (§1, §2, Protocol, Attribution structure, or how the playbook maintains its sections). **Routine use** with one's own Applicant Profile / Tracker is **not** a contribution.
 
 **Uniqueness:** Creators ∪ Contributors must be unique by username; no overlap with Creators. **Identification:** username only (no real names). Before adding any contributor for the first time, Claude must explicitly ask for the preferred username — never infer from chat context, emails, or signed messages. Format: `username`.
@@ -27,6 +30,7 @@ Users who have made substantive changes to the Playbook artifact (§1, §2, Prot
 _(empty)_
 
 ### Changelog (append-only)
+
 Records every change to the Playbook artifact itself. **Not** for session activity (those go in §5 Sync Log). Every entry requires an initiator (username from Creators or Contributors). Format: `[YYYY-MM-DD] vX.Y — initiator: username — Summary.`
 
 **Classification:** a change that alters Claude's behavior counts as a Protocol change even when the edited text lives outside §0, since behavior determines the Protocol's effect. Schema changes are tracked separately in the `Schema:` header field.
@@ -55,9 +59,10 @@ Records every change to the Playbook artifact itself. **Not** for session activi
 - `[2026-06-03] v3.2 — initiator: adibas03 — §0 Behavior gains a section description distinguishing behaviors (govern specific file content, bind as written) from principles (open-ended concepts applied with judgment), with a content-vs-concept rule of thumb and a "most likely / surface at the margin" hedge. Behavioral/Protocol change (no schema change).`
 - `[2026-06-03] v3.2 — initiator: adibas03 — General principle added (§0 Behavior 8): information may be outdated; on conversational signal, surface and investigate or ask rather than suppress; never licenses editing the append-only record. Behavioral/Protocol change (no schema change).`
 - `[2026-06-03] v3.2 — initiator: adibas03 — Hold-for-confirmation added (§0 Behavior 9): Changelog/version-generating changes are proposed and held until the user confirms; Claude does not mint versions or Changelog entries on its own initiative; batch under one version; lesson capture exempt. Behavioral/Protocol change (no schema change).`
-- `[2026-06-03] v3.2 — initiator: adibas03 — Refute and deprecate now require a reason (Operations table); Claude asks if none given. Deprecate format gains a reason slot (\`[DEPRECATED YYYY-MM-DD: reason]\`); status-suffix lines note the refute reason is required. Behavioral/Protocol change (no schema change).`
+- `[2026-06-03] v3.2 — initiator: adibas03 — Refute and deprecate now require a reason (Operations table); Claude asks if none given. Deprecate format gains a reason slot (\`[DEPRECATED YYYY-MM-DD: reason]`); status-suffix lines note the refute reason is required. Behavioral/Protocol change (no schema change).`
 - `[2026-06-03] v3.2 — initiator: adibas03 — Reinstatement-by-analysis added (after Operations table): refuted lessons / deprecated rules are not reversed; on resurfacing, Claude investigates the original reason against current circumstances, surfaces analysis, and routes genuine change into a new dated lesson. No new status, no merge change. Behavioral/Protocol change (no schema change).`
 - `[2026-06-03] v3.2 — initiator: adibas03 — §3 Profile explicit-override: older field values are never lost silently but may be replaced on explicit applicant request; merge rule honors explicit replacement. Scope is Profile only; §4 Tracker and §5 Sync Log remain append-only. Behavioral/Protocol change (no schema change).`
+- `[2026-06-09] v3.3 — initiator: adibas03 — Two changes batched. (1) §1.5 refined: §1.2 ATS-optimization defaults explicitly subordinate to the 48-hour window; ship the strongest version that fits the window, not the strongest possible version. Resolves implicit tension between §1.2 and §1.5. (2) §0 Behavior/Principle 10 added: transient artifacts (scratch drafts, intermediate outputs, superseded working files) are cleared once clearly superseded; extends to artifacts for applications whose purpose has clearly ended, only with applicant's explicit confirmation; strictly fenced from append-only records; ambiguous cases default to part-of-record and surface; principle, not behavior. (A §2 lesson was also captured anonymously in this session as a diminishing-return corollary to the 2026-05-27 ATS-tools lesson — noted here for traceability, not as a versioned change.) Behavioral/Protocol change (no schema change).`
 
 ---
 
@@ -74,23 +79,23 @@ Records every change to the Playbook artifact itself. **Not** for session activi
 5. **§4 Application Tracker** = per-conversation state. Append as applications happen. Older entries never lost to empty cells on merge.
 6. **§5 Sync Log** = session-activity audit. Append, never delete. **Not** for Playbook artifact changes — those go in the Changelog.
 7. **First-time onboarding.** When the Applicant Profile transitions from empty to populated within a conversation (a first-time setup), then before proceeding to the user's first task, briefly explain the persistence loop: state lives in this file; knowledge accrues automatically, but personal information is saved only when asked; at session end, ask Claude to output the updated file and paste it into a new conversation to resume. Once only — if the Profile arrives already populated (a returning user), skip this.
-8. **Information may be outdated** *(principle)*. Treat stored values, lessons, and rules as accurate-as-of-their-date, not permanently current. When the conversation signals a stored item may no longer hold, surface it and investigate or ask as appropriate to that item — never silently suppress, ignore, or act on possibly-stale information without flagging it. This never licenses editing or removing the historical record (append-only stands); it routes genuine change into the correct forward action (update a field, capture a new lesson) and always surfaces rather than deciding silently.
+8. **Information may be outdated** _(principle)_. Treat stored values, lessons, and rules as accurate-as-of-their-date, not permanently current. When the conversation signals a stored item may no longer hold, surface it and investigate or ask as appropriate to that item — never silently suppress, ignore, or act on possibly-stale information without flagging it. This never licenses editing or removing the historical record (append-only stands); it routes genuine change into the correct forward action (update a field, capture a new lesson) and always surfaces rather than deciding silently.
 9. **Hold for confirmation.** Changes that generate a Changelog entry or bump the file version (promote, refute, deprecate, add-rule, rename, Protocol edits) are proposed and held until the user explicitly confirms; Claude does not mint a version or write a Changelog entry on its own initiative. Batch related changes under one version where possible. Lesson capture (§2) is exempt — it remains anonymous, unversioned, and auto-accruing.
 
 ### Operations on §1 and §2
 
-| Operation | Effect | Attribution | Changelog? |
-|---|---|---|---|
-| Capture lesson | Append dated observation to §2, status `raw` | Anonymous | No |
-| Validate lesson | Update §2 lesson's status to `[VALIDATED]` | Anonymous | No |
-| Promote lesson → rule | Add rule to §1 with backlink; update lesson status to `[PROMOTED vX.Y]` | Promoter (username) | Yes |
-| Refute lesson | Update lesson status to `[REFUTED YYYY-MM-DD: reason]`. A reason is required; if the user doesn't provide one, ask before refuting. | Refuter (username) | Yes |
-| Deprecate rule | Mark rule `[DEPRECATED YYYY-MM-DD: reason]` in §1; origin lesson UNCHANGED. A reason is required; if the user doesn't provide one, ask before deprecating. | Deprecator (username) | Yes |
-| Add rule directly (no lesson) | Allowed but discouraged; prefer capture-then-promote. Use for industry-fact rules with external sources. | Initiator (username) | Yes |
+| Operation                     | Effect                                                                                                                                                     | Attribution           | Changelog? |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- | ---------- |
+| Capture lesson                | Append dated observation to §2, status `raw`                                                                                                               | Anonymous             | No         |
+| Validate lesson               | Update §2 lesson's status to `[VALIDATED]`                                                                                                                 | Anonymous             | No         |
+| Promote lesson → rule         | Add rule to §1 with backlink; update lesson status to `[PROMOTED vX.Y]`                                                                                    | Promoter (username)   | Yes        |
+| Refute lesson                 | Update lesson status to `[REFUTED YYYY-MM-DD: reason]`. A reason is required; if the user doesn't provide one, ask before refuting.                        | Refuter (username)    | Yes        |
+| Deprecate rule                | Mark rule `[DEPRECATED YYYY-MM-DD: reason]` in §1; origin lesson UNCHANGED. A reason is required; if the user doesn't provide one, ask before deprecating. | Deprecator (username) | Yes        |
+| Add rule directly (no lesson) | Allowed but discouraged; prefer capture-then-promote. Use for industry-fact rules with external sources.                                                   | Initiator (username)  | Yes        |
 
 **Initiator lookup:** (a) check Creators — if found, use that username and do not duplicate; (b) check Contributors — if found, use that username; (c) if neither, ask the user for preferred username and, with consent, add to Contributors. Then attribute.
 
-**Reinstatement (by analysis).** A refuted lesson or deprecated rule stays in the record (append-only) — it is not reversed. But its judgment is not frozen: when such an item resurfaces and the conversation suggests its refutation/deprecation reason may no longer hold, Claude *investigates* — examining the original reason against current circumstances and, where useful, checking external facts — then surfaces its analysis to the user (distinct from a Profile field, where Claude simply asks the user). If circumstances have genuinely changed, capture a *new dated lesson* reflecting current reality rather than un-setting the old marker. No status is reversed; the history reads as a sequence of dated judgments.
+**Reinstatement (by analysis).** A refuted lesson or deprecated rule stays in the record (append-only) — it is not reversed. But its judgment is not frozen: when such an item resurfaces and the conversation suggests its refutation/deprecation reason may no longer hold, Claude _investigates_ — examining the original reason against current circumstances and, where useful, checking external facts — then surfaces its analysis to the user (distinct from a Profile field, where Claude simply asks the user). If circumstances have genuinely changed, capture a _new dated lesson_ reflecting current reality rather than un-setting the old marker. No status is reversed; the history reads as a sequence of dated judgments.
 
 ### Merge rules
 
@@ -121,13 +126,13 @@ Distilled operating defaults derived from accumulated lessons (§2). Append-only
 
 Evaluate in order. Skip the role if any **hard filter** fails without a real workaround:
 
-1. **Work authorization** *[Hard]* — Does the role need work rights the applicant lacks, AND is the company unwilling/unable to sponsor? Establish the applicant's authorization from the Profile (`Citizenship` / `Work authorization status`); only if unavailable there, ask the applicant. Then compare against the role's requirement. (Profile values are authoritative but not frozen — see §0 Behavior 4 on re-confirming when the conversation suggests they're stale.) Signals: "Remote [single country]" or "Must have right to work in X"; explicit sponsorship statements; sector (defence/intelligence/government → almost always citizen-only); application-form sponsorship questions asked early are usually filters.
-2. **Language** *[Hard]* — Especially European public-sector or local-market roles. C1+ in a language the applicant doesn't have is a wall.
-3. **Hard credentials** *[Hard]* — Master's/PhD as "required," government security clearances, professional licenses. Public research institutes and government roles enforce strictly.
-4. **Title fit** *[Soft]* — Has the applicant *held* the title before, or only equivalent work? Title gaps are screen-stage rejection risks.
-5. **Stack/skill match** *[Soft]* — Production experience in the core technologies, or only adjacent ones?
-6. **Seniority band** *[Soft]* — Under-credentialed, well-matched, or significantly over-leveled? Both extremes hurt at the screen stage.
-7. **Domain alignment** *[Soft]* — Industry/values fit. Flag when role conflicts with stated thesis or values.
+1. **Work authorization** _[Hard]_ — Does the role need work rights the applicant lacks, AND is the company unwilling/unable to sponsor? Establish the applicant's authorization from the Profile (`Citizenship` / `Work authorization status`); only if unavailable there, ask the applicant. Then compare against the role's requirement. (Profile values are authoritative but not frozen — see §0 Behavior 4 on re-confirming when the conversation suggests they're stale.) Signals: "Remote [single country]" or "Must have right to work in X"; explicit sponsorship statements; sector (defence/intelligence/government → almost always citizen-only); application-form sponsorship questions asked early are usually filters.
+2. **Language** _[Hard]_ — Especially European public-sector or local-market roles. C1+ in a language the applicant doesn't have is a wall.
+3. **Hard credentials** _[Hard]_ — Master's/PhD as "required," government security clearances, professional licenses. Public research institutes and government roles enforce strictly.
+4. **Title fit** _[Soft]_ — Has the applicant _held_ the title before, or only equivalent work? Title gaps are screen-stage rejection risks.
+5. **Stack/skill match** _[Soft]_ — Production experience in the core technologies, or only adjacent ones?
+6. **Seniority band** _[Soft]_ — Under-credentialed, well-matched, or significantly over-leveled? Both extremes hurt at the screen stage.
+7. **Domain alignment** _[Soft]_ — Industry/values fit. Flag when role conflicts with stated thesis or values.
 
 **Decision rule:** Any hard filter fails with no workaround → recommend skip. Only soft filters fail → present honestly and let the applicant decide.
 
@@ -166,7 +171,7 @@ Evaluate in order. Skip the role if any **hard filter** fails without a real wor
 
 ### 1.5 Submission speed
 
-**48-hour rule:** Strong-fit roles → submit tailored materials within 48 hours of identification. Strong-fit roles close fast; perfect-but-too-late is a real failure mode. *Origin lesson: §2 2026-05-28.*
+**48-hour rule:** Strong-fit roles → submit tailored materials within 48 hours of identification. Strong-fit roles close fast; perfect-but-too-late is a real failure mode. The §1.2 ATS-optimization defaults still apply, but should not delay submission past this window — ship the strongest version that fits the window, not the strongest possible version. _Origin lesson: §2 2026-05-28._
 
 ### 1.6 Source quality observations
 
@@ -179,6 +184,7 @@ Evaluate in order. Skip the role if any **hard filter** fails without a real wor
 ### 1.7 Scam markers — skip immediately
 
 A posting with two or more of these is high-risk:
+
 - Salary below the country's visa-sponsorship minimum, yet "visa sponsorship" offered as a benefit
 - Keyword-stuffed qualifications list (30+ technologies, mutually exclusive stacks)
 - Generic AI-written description with no concrete product, team, mission, or client
@@ -204,7 +210,7 @@ If present, **verify on the country's official sponsor register** before any fur
 
 Anonymous, dated observations. Capturable by anyone; no username recorded; no Changelog entry. Append-only, persistent across conversations and users. Stand until explicitly refuted (a Changelog event).
 
-**PII-free.** Lesson *content* must contain no personal information — no applicant names, no employer/role identifiers tied to an individual, no contact details. Lessons capture portable *patterns*, not individual *cases*. On capture, Claude strips identifying specifics. This is distinct from the anonymity of authorship above: even with no author recorded, the text itself must carry no PII, because lessons are shared across users and merged between copies, where any personal detail would propagate permanently.
+**PII-free.** Lesson _content_ must contain no personal information — no applicant names, no employer/role identifiers tied to an individual, no contact details. Lessons capture portable _patterns_, not individual _cases_. On capture, Claude strips identifying specifics. This is distinct from the anonymity of authorship above: even with no author recorded, the text itself must carry no PII, because lessons are shared across users and merged between copies, where any personal detail would propagate permanently.
 
 Status suffix (optional, but a `[REFUTED]` suffix's reason is required): `(none)` = raw · `[VALIDATED]` · `[PROMOTED vX.Y]` · `[REFUTED YYYY-MM-DD: reason]`. A promoted lesson keeps its `[PROMOTED]` status even if the derived rule is later deprecated — lessons are raw history.
 
@@ -216,6 +222,7 @@ Format: `[YYYY-MM-DD] Lesson statement. [STATUS-IF-ANY]`
 - `[2026-05-27]` ATS-scoring tools (e.g. Jobscan) paywall full results but expose enough free signal to act on: missing keywords, structural flags, exact-title-match issues. The missing-keywords list is the most useful free output. `[PROMOTED v1.0]`
 - `[2026-05-28]` Honest gap-acknowledgment in a cover letter (e.g., "I don't read Ruby yet; here's my ramp plan") reads as confidence, not weakness. Observed across three real-fit applications; none auto-rejected on it. `[PROMOTED v1.0]`
 - `[2026-05-28]` 48-hour submission rule: a strong-fit role expired during an additional-polish window. Submit tailored materials fast on strong-fit roles. `[PROMOTED v1.0]`
+- `[2026-06-09]` ATS-scoring tools' paywalled full reports typically offer diminishing return on a per-application basis — the free-tier missing-keywords list and structural flags capture the actionable subset. Useful corollary to the 2026-05-27 lesson: don't pay per scan unless you're optimizing across many applications.
 
 ---
 
@@ -228,6 +235,7 @@ Format: `[YYYY-MM-DD] Lesson statement. [STATUS-IF-ANY]`
 > **Optional:** public presence; specialized depth; salary expectations; long-term projects; values / red flags.
 
 ### Identity
+
 - **Name:** _(empty)_
 - **Location:** _(empty)_
 - **Citizenship:** _(empty)_
@@ -236,12 +244,15 @@ Format: `[YYYY-MM-DD] Lesson statement. [STATUS-IF-ANY]`
 - **Phone:** _(empty)_
 
 ### Public presence
+
 - _(empty)_
 
 ### Career summary
+
 _(empty)_
 
 ### Technical stack
+
 - **Cloud:** _(empty)_
 - **Languages (production fluent):** _(empty)_
 - **Languages (familiar, sparse production):** _(empty)_
@@ -253,15 +264,19 @@ _(empty)_
 - **Other specialized:** _(empty)_
 
 ### Product / UX experience
+
 _(empty)_
 
 ### Education
+
 _(empty)_
 
 ### Languages
+
 _(empty)_
 
 ### Target roles and constraints
+
 - **Open to:** _(empty)_
 - **Industry preference:** _(empty)_
 - **Geography:** _(empty)_
@@ -269,12 +284,15 @@ _(empty)_
 - **Salary expectations:** _(empty)_
 
 ### Master resume
+
 _(empty — provide filename or upload reference)_
 
 ### Long-term projects / deferred plans
+
 _(empty)_
 
 ### Values / red flags
+
 - **Mission-aligned:** _(empty)_
 - **Caution / discuss before applying:** _(empty)_
 - **Hard pass:** _(empty)_
@@ -283,50 +301,49 @@ _(empty)_
 
 ## 4. APPLICATION TRACKER
 
-> Per-conversation state, not portable. Owned by each conversation; shared template is blank. Status definitions:
-> **Reviewed and skipped** — fit-check failed · **Deferred** — on roadmap (reapply later) · **Applied — awaiting response** · **Applied — in process** (recruiter call, technical test, interview) · **Applied — rejected** · **Applied — offered / accepted / declined** · **Expired before submission** (note reason).
+> Per-conversation state, not portable. Owned by each conversation; shared template is blank. Status definitions: **Reviewed and skipped** — fit-check failed · **Deferred** — on roadmap (reapply later) · **Applied — awaiting response** · **Applied — in process** (recruiter call, technical test, interview) · **Applied — rejected** · **Applied — offered / accepted / declined** · **Expired before submission** (note reason).
 
 ### Applied — awaiting response
 
-| Company | Role | Date applied | Notes |
-|---|---|---|---|
-| _(empty)_ | | | |
+| Company   | Role | Date applied | Notes |
+| --------- | ---- | ------------ | ----- |
+| _(empty)_ |      |              |       |
 
 ### Applied — in process
 
-| Company | Role | Stage | Date | Notes |
-|---|---|---|---|---|
-| _(empty)_ | | | | |
+| Company   | Role | Stage | Date | Notes |
+| --------- | ---- | ----- | ---- | ----- |
+| _(empty)_ |      |       |      |       |
 
 ### Applied — rejected
 
-| Company | Role | Date | Likely cause |
-|---|---|---|---|
-| _(empty)_ | | | |
+| Company   | Role | Date | Likely cause |
+| --------- | ---- | ---- | ------------ |
+| _(empty)_ |      |      |              |
 
 ### Applied — offered / accepted / declined
 
-| Company | Role | Outcome | Date | Notes |
-|---|---|---|---|---|
-| _(empty)_ | | | | |
+| Company   | Role | Outcome | Date | Notes |
+| --------- | ---- | ------- | ---- | ----- |
+| _(empty)_ |      |         |      |       |
 
 ### Deferred
 
-| Company | Role | Reason |
-|---|---|---|
-| _(empty)_ | | |
+| Company   | Role | Reason |
+| --------- | ---- | ------ |
+| _(empty)_ |      |        |
 
 ### Expired before submission
 
-| Company | Role | Reason |
-|---|---|---|
-| _(empty)_ | | |
+| Company   | Role | Reason |
+| --------- | ---- | ------ |
+| _(empty)_ |      |        |
 
 ### Reviewed and skipped
 
-| Company | Role | Reason |
-|---|---|---|
-| _(empty)_ | | |
+| Company   | Role | Reason |
+| --------- | ---- | ------ |
+| _(empty)_ |      |        |
 
 ---
 
@@ -341,11 +358,13 @@ _(empty)_
 ## How to Start a New Conversation
 
 ### 1. Paste this file as your first message
+
 Claude will acknowledge Attribution + Protocol, read the current Profile and Tracker (or note they're empty), and wait for your first instruction.
 
 **File too large for upload?** Omit Section 2 (LESSONS) — the Playbook (§1) operates standalone. Backlinks may reference missing lesson dates; Claude will note this and continue.
 
 ### 2. Common first instructions
+
 - **"Review this role: [URL or pasted JD]"** — runs the §1.1 fit-check against your Profile
 - **"Build materials for this role"** — only after fit-check passes; tailors resume + cover letter
 - **"Capture a lesson: [text]"** — anonymous, dated entry to §2
@@ -355,17 +374,21 @@ Claude will acknowledge Attribution + Protocol, read the current Profile and Tra
 - **"Update my Profile: [change]"** · **"Update the Tracker: [Company] is now [status]"**
 
 ### 3. During the session
+
 Provide one job at a time; fit-check before tailoring. Ask Claude to note submission dates in the Tracker. Capture observations as lessons to grow the artifact's knowledge.
 
 ### 4. End of session
-Knowledge you've added (lessons) is already in the file. To save your personal state, tell Claude to record it — for example, *"update the Jobstead with my information"* (or however you'd naturally say it). Claude outputs a fresh copy with Sync Log appended, Tracker and Profile updated, new lessons, and any Changelog entries. Save it and paste it into a new conversation to resume. Skip this and nothing personal carries over — you keep only the methodology.
+
+Knowledge you've added (lessons) is already in the file. To save your personal state, tell Claude to record it — for example, _"update the Jobstead with my information"_ (or however you'd naturally say it). Claude outputs a fresh copy with Sync Log appended, Tracker and Profile updated, new lessons, and any Changelog entries. Save it and paste it into a new conversation to resume. Skip this and nothing personal carries over — you keep only the methodology.
 
 ### 5. Bringing knowledge from other conversations
+
 Paste another copy with **"Please merge this with our current context."** Claude surfaces new rules, lessons, and conflicts for your confirmation. Nothing is overwritten silently.
 
 ### 6. Privacy
+
 Playbook (§1–§2) and Attribution are PII-free and safe to share. Profile (§3), Tracker (§4), and Sync Log (§5) may contain PII — review before sharing outside your own workflow.
 
 ---
 
-*End of file.*
+_End of file._
