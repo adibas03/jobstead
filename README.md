@@ -8,6 +8,8 @@ Jobstead turns a fresh AI chat into a structured job-search assistant — with a
 
 The **lessons layer grows on its own** — observations the AI notes during a session stay in the file, with no personal data attached. Promoting a lesson into a standing rule is a deliberate, attributed step. And your **personal information is never saved unless you ask** — your profile, applications, and history persist only when you tell the AI to record them. So the file always travels as shareable, profile-free methodology; you add your data, and keep that copy, only when you want to resume your own search.
 
+It also **looks after your working session**: when a draft or output is clearly superseded, the AI offers to clear it so you're not carrying dead weight from turn to turn or into the copy you save — and when meaningful progress has built up that isn't yet saved (new applications, profile changes, session notes), it offers you an updated copy, so a crash or a full context window doesn't cost you the work. The append-only record is never touched by either; only transient clutter is cleared, and only with your okay.
+
 **[→ Get the file: `Jobstead.md`](./Jobstead.md)**
 
 ---
