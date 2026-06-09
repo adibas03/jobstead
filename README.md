@@ -1,10 +1,14 @@
 # Jobstead
 
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
+
 *The community-grown job-search playbook you own and carry: hard-won lessons and tailoring strategy in one portable markdown file, AI-ready for any chat.*
 
 Jobstead turns a fresh AI chat into a structured job-search assistant — with a fit-check methodology, ATS rules, tailoring strategy, and scam markers baked in. Paste it into ChatGPT, Claude, Gemini, or any AI chat, and it inherits the playbook and starts working against *your* profile and *your* job pipeline.
 
 The **lessons layer grows on its own** — observations the AI notes during a session stay in the file, with no personal data attached. Promoting a lesson into a standing rule is a deliberate, attributed step. And your **personal information is never saved unless you ask** — your profile, applications, and history persist only when you tell the AI to record them. So the file always travels as shareable, profile-free methodology; you add your data, and keep that copy, only when you want to resume your own search.
+
+It also **looks after your working session**: when a draft or output is clearly superseded, the AI offers to clear it so you're not carrying dead weight from turn to turn or into the copy you save — and when meaningful progress has built up that isn't yet saved (new applications, profile changes, session notes), it offers you an updated copy, so a crash or a full context window doesn't cost you the work. The append-only record is never touched by either; only transient clutter is cleared, and only with your okay.
 
 **[→ Get the file: `Jobstead.md`](./Jobstead.md)**
 
@@ -31,6 +35,12 @@ Anyone running a real job search with ChatGPT, Claude, or any capable AI chat wh
 2. **Paste it as your first message** in a new AI chat (ChatGPT, Claude, Gemini, or similar). The AI reads the methodology and notes that your profile is empty.
 3. **Tell the AI who you are**, or upload a resume — it fills in the profile section by asking or parsing.
 4. **Give it a role:** *"Review this role: [paste the job description or URL]"*. The AI runs the fit-check before doing any tailoring.
+
+   *What that looks like:* you paste a role, and instead of jumping to a cover letter, the fit-check weighs it against your profile first — for example:
+   > **Senior Data Engineer, Lisbon (hybrid).** Strong overlap on your dbt and pipeline work. **But:** the role is hybrid in Portugal and lists no relocation or sponsorship — and your profile says you're authorized to work in Canada only. That's a hard blocker, not a framing problem. **Recommendation: don't prioritize this one** unless you can confirm sponsorship. If you want, I can draft a one-line query to the recruiter to check before you invest in tailoring.
+
+   When a role *does* fit, it moves on to surface your strongest points and tailor an honest, ATS-ready application for it.
+
 5. **To continue in a future chat, just tell the AI to save your details** — for example, *"update the Jobstead with my information"* (or however you'd naturally put it). It records your profile and applications into the file. Save that copy — then in a new conversation (a fresh chat, since this one won't be remembered), paste it as your first message to pick up where you left off. Skip this step and nothing personal carries over; you keep only the methodology.
 
 The file documents its own commands and conventions in full — the [How to Start a New Conversation](./Jobstead.md#how-to-start-a-new-conversation) section is the authoritative quickstart. This README is just the front door.
@@ -61,10 +71,11 @@ The methodology is built around *not* faking your way past filters. It optimizes
 - **Not an enforcement system.** The file's attribution and "immutable creators" rules are good-faith conventions, maintained by human review — not access controls. Anyone can edit a text file; we're documenting provenance, not securing it.
 - **Not a guarantee.** The lessons reflect real experience but include time-sensitive facts (salary thresholds, policy specifics) that go stale. Where the file gives a number, it tells you to verify the current figure. Do!!!
 - **Not legal or immigration advice.** Work-authorization and visa notes are practical heuristics, not authoritative guidance.
+- **Not uniform across models.** The methodology is the same wherever you paste it, but the quality of what you get depends on the AI running it — a more capable model reasons through a fit-check or a tailoring pass better than a weaker one. Portability means it runs anywhere; it doesn't mean every model executes it equally well.
 
 ## Contributing
 
-Jobstead improves when people contribute lessons and rules back. Contributions go through pull requests that map onto the file's own Changelog and Contributor conventions — see **[CONTRIBUTING](./CONTRIBUTING.md)** for how a proposed rule or lesson becomes a properly attributed entry.
+Jobstead improves when people contribute lessons and rules back — and when you do, you're recorded in the file's own permanent, append-only record. A promoted rule or lesson is attributed to your username in the Changelog and Contributors list, and that provenance travels with every copy of the file thereafter. Contributions go through pull requests that map onto those same Changelog and Contributor conventions — see **[CONTRIBUTING](./CONTRIBUTING.md)** for how a proposed rule or lesson becomes a properly attributed entry.
 
 ## License
 
