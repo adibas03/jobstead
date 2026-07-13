@@ -12,55 +12,45 @@ here for next time.
 
 ## Identity
 
-- **Name:** Maya Okonkwo-Tremblay
-- **Location:** Toronto, ON, Canada
-- **Citizenship:** Canadian
-- **Work authorization status:** Authorized to work in Canada. EU/Portugal work rights not
-  established from resume — flagged for direct confirmation, not assumed.
-- **Email:** maya.ot@example.ca
-- **Phone:** (416) 555-0148
+- **Name:**
+- **Location:**
+- **Citizenship:**
+- **Work authorization status:**
+- **Email:**
+- **Phone:**
 
 ## Public presence
 
-- linkedin.com/in/maya-ot-example
+-
 
 ## Career summary
-
-Data analyst with 6 years building analytics in fintech. Strong SQL and Python, day-to-day owner
-of a production dbt project, comfortable across the modern data stack. Looking to move into
-analytics-engineering roles, remote, on North American hours.
 
 ## Technical stack
 
 - **Cloud:**
-- **Languages (production fluent):** SQL, Python (pandas)
+- **Languages (production fluent):**
 - **Languages (familiar, sparse production):**
 - **Languages (not held):**
-- **Frameworks:** dbt (production-fluent, owns a 40+ model project)
-- **Data:** Snowflake (familiar — used briefly at current role, not deep)
-- **DevOps / Architecture:** Airflow (familiar — basic DAG authoring, not primary maintainer)
+- **Frameworks:**
+- **Data:**
+- **DevOps / Architecture:**
 - **AI tooling:**
-- **Other specialized:** Not held: Power BI, Looker, Spark
+- **Other specialized:**
 
 ## Education
 
-B.Sc. Statistics, University of Toronto, 2019
-
 ## Languages
-
-*(not stated on resume — English fluency reasonable to infer from Canadian upbringing, but not
-confirmed; flag rather than assume for any role with an explicit language requirement)*
 
 ## Target roles and constraints
 
-- **Open to:** Analytics-engineering roles
+- **Open to:**
 - **Industry preference:**
-- **Geography:** Remote, North American hours
+- **Geography:**
 - **Salary expectations:**
 
 ## Master resume
 
-Maya_Resume.docx
+*(filename or reference to the applicant's base resume)*
 
 ## Long-term projects / deferred plans
 
