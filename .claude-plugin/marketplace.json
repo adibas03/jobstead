@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "jobstead",
+  "owner": {
+    "name": "adibas03"
+  },
+  "version": "1.0.0",
+  "description": "Jobstead — apply to the right roles, and tell your story, beautifully.",
+  "plugins": [
+    {
+      "name": "jobstead",
+      "description": "Fit-check job postings against your persistent profile, catch scams, and build a story-grounded, ATS-optimized resume and cover letter — not generic one-shot resume polish.",
+      "author": {
+        "name": "adibas03"
+      },
+      "category": "productivity",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/jobstead"]
+    }
+  ]
+}
