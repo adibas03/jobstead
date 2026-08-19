@@ -9,7 +9,7 @@ Jobstead helps a job-seeker spend their search energy where it can pay off: the 
 with their real story, grounded in what's actually true about them and the posting — not volume,
 not generic resume polish. This file carries the methodology. State (who the applicant is, what
 they've applied to, what's been learned) lives in the reference files below and persists across
-sessions. Skill port of the plain-chat [Jobstead playbook](https://raw.githubusercontent.com/adibas03/jobstead/refs/tags/v3.5/Jobstead.md).
+sessions. Skill port of the plain-chat [Jobstead playbook](https://raw.githubusercontent.com/adibas03/jobstead/refs/tags/v3.6/Jobstead.md).
 
 ## Session start — load state
 
@@ -106,6 +106,15 @@ Once a role clears the fit-check, build a resume and cover letter grounded in th
 actual story and the specific posting — not a generic reformat and not pure ATS-formatting. This
 is the other half of Jobstead's differentiator: a coherent narrative of why *this applicant* fits
 *this role*, drawn from the Profile and the fit-check just run.
+
+**Start with the narrative, then tailor to it.** Before editing anything, identify the employer's
+hiring narrative (the story they're trying to validate) and the applicant's strongest *truthful*
+narrative that answers it. Focusing test: if the hiring manager remembered only one thing after
+reading the resume, what should it be? Every resume item emits a signal — a C-level role signals
+leadership and business orientation, production-scale metrics signal operational rigor, deep
+open-source work signals systems thinking. Tailoring is then signal engineering: amplify the
+signals that reinforce the chosen narrative, reduce emphasis on those answering a different hiring
+question. The reordering, rewriting, trimming, and ATS steps below all flow from this selection.
 
 1. Read the JD closely: the literal title, the 5–10 most-repeated keywords, which requirements are
    "must have" vs. "nice to have," and the company's tone/voice.
