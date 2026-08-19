@@ -2,7 +2,7 @@
 
 _The community-grown job-search playbook you own and carry: hard-won lessons and tailoring strategy in one portable markdown file, AI-ready for any chat._
 
-**File version:** 3.5 · **Schema:** v2.2 · **Last synced:** 2026-06-17
+**File version:** 3.6 · **Schema:** v2.3 · **Last synced:** 2026-08-12
 
 Jobstead is a portable, mergeable context for an AI-assisted job search. Paste it into a new chat to bootstrap, share it between users running the same playbook, merge it with other copies without losing information.
 
@@ -64,9 +64,10 @@ Records every change to the Playbook artifact itself. **Not** for session activi
 - `[2026-06-03] v3.2 — initiator: adibas03 — Refute and deprecate now require a reason (Operations table); Claude asks if none given. Deprecate format gains a reason slot (\`[DEPRECATED YYYY-MM-DD: reason]`); status-suffix lines note the refute reason is required. Behavioral/Protocol change (no schema change).`
 - `[2026-06-03] v3.2 — initiator: adibas03 — Reinstatement-by-analysis added (after Operations table): refuted lessons / deprecated rules are not reversed; on resurfacing, Claude investigates the original reason against current circumstances, surfaces analysis, and routes genuine change into a new dated lesson. No new status, no merge change. Behavioral/Protocol change (no schema change).`
 - `[2026-06-03] v3.2 — initiator: adibas03 — §3 Profile explicit-override: older field values are never lost silently but may be replaced on explicit applicant request; merge rule honors explicit replacement. Scope is Profile only; §4 Tracker and §5 Sync Log remain append-only. Behavioral/Protocol change (no schema change).`
-- `[2026-06-09] v3.3 — initiator: adibas03 — Two changes batched. (1) §1.5 refined: §1.2 ATS-optimization defaults explicitly subordinate to the 48-hour window; ship the strongest version that fits the window, not the strongest possible version. Resolves implicit tension between §1.2 and §1.5. (2) §0 Behavior/Principle 10 added: transient artifacts (scratch drafts, intermediate outputs, superseded working files) are cleared once clearly superseded; extends to artifacts for applications whose purpose has clearly ended, only with applicant's explicit confirmation; strictly fenced from append-only records; ambiguous cases default to part-of-record and surface; principle, not behavior. (A §2 lesson was also captured anonymously in this session as a diminishing-return corollary to the 2026-05-27 ATS-tools lesson — noted here for traceability, not as a versioned change.) Behavioral/Protocol change (no schema change).`
-- `[2026-06-09] v3.4 — initiator: adibas03 — Two changes batched. (1) §0 Behavior/Principle 11 added: when meaningful unsaved state has accumulated in a session (Tracker, Profile, Sync Log entries, or held proposals under Behavior 9), Claude offers an updated copy. Judgment-based threshold, not lifecycle-triggered, to protect against session loss (crashes, context exhaustion, forgetting). Auto-accrued lessons don't trigger it on their own; suppressed after a recent output. Distinct from Behavior 10 (transient artifacts cleared) — Behavior 10 governs clearing superseded scratch work; Behavior 11 governs preventing loss of unsaved record state. (2) Schema definition added to Attribution Classification block: Schema = the file's structural contract; bump only when section layout, merge keys, operation types, or data formats change. Behavioral/Protocol changes work within existing structure and bump only the file version. Rule of thumb provided. Formalizes the convention used since v2.4. Behavioral/Protocol change (no schema change).`
+- `[2026-06-09] v3.3 — initiator: adibas03 — Two changes batched. (1) §1.5 refined: §1.2 ATS-optimization defaults explicitly subordinate to the 48-hour window; ship the strongest version that fits the window, not the strongest possible version. Resolves implicit tension between §1.2 and §1.5. (2) §0 Behavior/Principle 10 added: transient artifacts (scratch drafts, intermediate outputs, superseded working files) are cleared once clearly superseded; extends to artifacts for applications whose purpose has clearly ended, only with applicant's explicit confirmation; strictly fenced from append-only records; ambiguous cases default to part-of-record and surface; principle, not behavior. Behavioral/Protocol change (no schema change).`
+- `[2026-06-09] v3.4 — initiator: adibas03 — Two changes batched. (1) §0 Behavior/Principle 11 added: when meaningful unsaved state has accumulated in a session (Tracker, Profile, Sync Log entries, or held proposals under Behavior 9), Claude offers an updated copy. Judgment-based threshold, not lifecycle-triggered. Auto-accrued lessons don't trigger it on their own; suppressed after a recent output. Distinct from Behavior 10 (transient artifacts cleared) — Behavior 10 governs clearing superseded scratch work; Behavior 11 governs preventing loss of unsaved record state. (2) Schema definition added to Attribution Classification block: Schema = the file's structural contract; bump only when section layout, merge keys, operation types, or data formats change. Behavioral/Protocol changes work within existing structure and bump only the file version. Rule of thumb provided. Formalizes the convention used since v2.4. Behavioral/Protocol change (no schema change).`
 - `[2026-06-17] v3.5 — initiator: adibas03 — §0 Behavior 12 added (Save/export completeness and companion offer): when a user requests to save or export Jobstead, the model ensures any output reflects the full session within the appropriate scope, not only immediate context; where this cannot be fully achieved, the model surfaces the gap rather than producing a silent partial export; if valuable information has accumulated that does not fit any Jobstead section, the model additionally offers to save it to a single file named to indicate its relationship to Jobstead, ready for import as additional context; if accepted, the model exercises judgment on contents. "Any output" generalizes scope so completeness applies to direct exports and any companion files alike. Single-file constraint on the companion supports portability (clean import as one attachment) while retaining separation of concern (companion stays distinct from Jobstead.md). Behavioral/Protocol change (no schema change).`
+- `[2026-06-17] v3.6 — initiator: adibas03 — §1.3 Narrative-first tailoring added: before editing, identify the employer's hiring narrative and the applicant's strongest truthful narrative that answers it (focusing test: what one thing should the hiring manager remember after reading the resume?). Every resume item emits a signal — categories such as C-level role (leadership + business orientation), production-scale metrics (operational rigor), deep open-source contributions (systems thinking). Tailoring becomes signal engineering — amplifying signals reinforcing the chosen narrative and reducing emphasis on signals answering a different hiring question. Reordering, rewriting, trimming, and ATS optimization all flow from this selection. Inserted at §1.3 before tactical tailoring; downstream §1.4–§1.9 renumbered. Schema bump v2.2 → v2.3 (restructure of §1).`
 
 ---
 
@@ -140,6 +141,8 @@ Evaluate in order. Skip the role if any **hard filter** fails without a real wor
 5. **Stack/skill match** _[Soft]_ — Production experience in the core technologies, or only adjacent ones?
 6. **Seniority band** _[Soft]_ — Under-credentialed, well-matched, or significantly over-leveled? Both extremes hurt at the screen stage.
 7. **Domain alignment** _[Soft]_ — Industry/values fit. Flag when role conflicts with stated thesis or values.
+8. **Employment type** _[Soft]_ — Does the role's employment type (e.g. full-time, contractor, fixed-term, part-time) match what the applicant is open to? Establish from Profile; flag mismatches for applicant decision.
+9. **Work location type** _[Soft]_ — Does the role's location type (e.g. remote, hybrid, on-site) match the applicant's situation? Aggregator labels are unreliable — verify against the application form or careers page before proceeding. "Hybrid" in particular can mean anything from async-optional to mandatory city-specific attendance.
 
 **Decision rule:** Any hard filter fails with no workaround → recommend skip. Only soft filters fail → present honestly and let the applicant decide.
 
@@ -158,7 +161,11 @@ Evaluate in order. Skip the role if any **hard filter** fails without a real wor
 - **File format:** .docx generally parses more reliably than PDF. Submit .docx where the form accepts; PDF as fallback.
 - **Education degree mismatch** (non-CS for CS roles) is often a fixed filter with no honest workaround. Accept as known miss; don't fake.
 
-### 1.3 Tailoring strategy
+### 1.3 Narrative-first tailoring
+
+Before editing the resume, identify the employer's hiring narrative (the story the employer is trying to validate) and the applicant's strongest truthful narrative that answers it. A useful focusing test: if the hiring manager only remembered one thing about the applicant after reading the resume, what should it be? Useful working frame: every resume item emits a signal — a C-level role signals leadership and business orientation; production-scale metrics signal operational rigor; deep open-source contributions signal systems thinking. Tailoring becomes signal engineering — amplifying signals that support the chosen narrative and reducing emphasis on signals that answer a different hiring question. Reordering sections, rewriting bullets, trimming content, and ATS optimization are all consequences of this narrative selection.
+
+### 1.4 Tailoring strategy
 
 1. **Read the JD carefully.** Identify (a) literal title, (b) 5–10 most repeated keywords, (c) "must have" vs "nice to have", (d) company tone/voice.
 2. **Reposition the headline** to match the role family (EM vs. Staff IC vs. PO, etc.). Don't reuse one headline for all roles.
@@ -168,7 +175,7 @@ Evaluate in order. Skip the role if any **hard filter** fails without a real wor
 6. **Address gaps honestly** in the cover letter. Acknowledging weakness with a ramp plan reads as confidence; hiding it reads as risk.
 7. **Match the company's voice.** Casual postings → casual cover letter; formal → formal.
 
-### 1.4 Cover letter standards
+### 1.5 Cover letter standards
 
 - One page maximum.
 - Open with the strongest hook — usually a specific JD line that genuinely resonates with the applicant's background.
@@ -176,11 +183,11 @@ Evaluate in order. Skip the role if any **hard filter** fails without a real wor
 - Specifics over generics — name actual products, named recruiters, specific stack components from the JD.
 - End with a concrete next step (technical test, paid trial, specific problem discussion).
 
-### 1.5 Submission speed
+### 1.6 Submission speed
 
 **48-hour rule:** Strong-fit roles → submit tailored materials within 48 hours of identification. Strong-fit roles close fast; perfect-but-too-late is a real failure mode. The §1.2 ATS-optimization defaults still apply, but should not delay submission past this window — ship the strongest version that fits the window, not the strongest possible version. _Origin lesson: §2 2026-05-28._
 
-### 1.6 Source quality observations
+### 1.7 Source quality observations
 
 - **Aggregators filtered by "visa sponsorship" (SimplyHired, Indeed)** attract scams and body-shop postings. Avoid.
 - **Real sponsors don't advertise sponsorship as a "benefit."** They just list the role.
@@ -188,7 +195,7 @@ Evaluate in order. Skip the role if any **hard filter** fails without a real wor
 - **Aggregator boards (Arbeitnow, Greenhouse listings)** for European tech are mixed-quality but contain real opportunities. Apply fit-check rigorously.
 - **Government/public-sector portals** (Singapore careers@gov, France Travail, EU EURES) mostly citizen-only at IT-specialist level. Check only for bodies known to hire foreigners (e.g., Singapore GovTech).
 
-### 1.7 Scam markers — skip immediately
+### 1.8 Scam markers — skip immediately
 
 A posting with two or more of these is high-risk:
 
@@ -204,7 +211,7 @@ A posting with two or more of these is high-risk:
 
 If present, **verify on the country's official sponsor register** before any further engagement.
 
-### 1.8 Honest framing principles
+### 1.9 Honest framing principles
 
 - **Don't fake credentials** — degrees, certifications, citizenship.
 - **Don't overclaim depth** — sparse experience flagged "familiar with" or omitted, not listed as a strength.
@@ -231,6 +238,11 @@ Format: `[YYYY-MM-DD] Lesson statement. [STATUS-IF-ANY]`
 - `[2026-05-28]` 48-hour submission rule: a strong-fit role expired during an additional-polish window. Submit tailored materials fast on strong-fit roles. `[PROMOTED v1.0]`
 - `[2026-06-09]` ATS-scoring tools' paywalled full reports typically offer diminishing return on a per-application basis — the free-tier missing-keywords list and structural flags capture the actionable subset. Useful corollary to the 2026-05-27 lesson: don't pay per scan unless you're optimizing across many applications.
 - `[2026-06-09]` Cold-outreach emails referencing real roles at real companies can still be phishing imitations — the role/URL legitimacy and the sender legitimacy are separable. A mailer-daemon bounce on a reply to such outreach is strong confirmation the sender was not real: legitimate recruiter mailboxes don't vanish within days. The defensive move is to apply via the official ATS portal directly; the email channel is optional and skippable.
+- `[2026-06-10]` Soft filters that compound — degree mismatch, under-leveled IC title, off-thesis domain — function effectively as a hard filter in aggregate even when each is individually waivable. When 3+ soft filters fail together at the same role, treat as a structural skip rather than a discretionary one. Pattern observed across mid-senior IC roles at established European tech companies.
+- `[2026-06-10]` Sub-24-hour rejections on senior IC applications are almost always mechanical screening (location/visa hard filter, ATS auto-screen), not substantive review of the application. Reading them as judgments on application quality is incorrect — they're judgments on whether the application cleared the basic structural screen. Corollary to 2026-05-26: when location dropdowns don't include the applicant's location, honest acknowledgment of the gap in a cover letter does not overcome the screen. The application either matches the form's location options or it doesn't.
+- `[2026-07-03]` Employment type and work location type are basic fit dimensions that belong in every §1.1 fit-check. Omitting them from the check — and from the Applicant Profile — means roles can pass fit-check on all listed criteria while being structurally incompatible on dimensions nobody thought to verify. Thoroughness in fit-checking requires the checklist itself to be complete, not just consistently applied. `[PROMOTED v3.6]`
+- `[2026-08-12]` Application form right-to-work dropdowns are the most reliable signal of actual work authorization requirements — more reliable than the JD or aggregator listing. A binary "do you hold the right to work in X?" dropdown with no Other/sponsorship option is a hard gate regardless of what the JD says. An "Other — please provide additional information" free-text field alongside the dropdown signals a potential pathway worth exploring. Always check the form before investing in materials for a role with ambiguous work authorization language.
+
 ---
 
 ## 3. APPLICANT PROFILE
@@ -252,7 +264,7 @@ Format: `[YYYY-MM-DD] Lesson statement. [STATUS-IF-ANY]`
 
 ### Public presence
 
-- _(empty)_
+_(empty)_
 
 ### Career summary
 
@@ -285,6 +297,8 @@ _(empty)_
 ### Target roles and constraints
 
 - **Open to:** _(empty)_
+- **Preferred employment type:** _(empty)_
+- **Preferred work location type:** _(empty)_
 - **Industry preference:** _(empty)_
 - **Geography:** _(empty)_
 - **Work authorization status:** _(empty)_
