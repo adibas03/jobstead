@@ -18,7 +18,7 @@ Routine use of the file for your own job search — filling in your Profile, log
 
 ## How the file's operations map to a PR
 
-**These operations are already built into Jobstead.** You don't hand-construct the backlinks, status suffixes, or Changelog formatting — you ask your AI to perform the operation in-chat ("promote the lesson from [date]", "refute the lesson from [date]: [reason]"), and Jobstead produces the correctly-formatted file. Your PR is simply the resulting diff. The breakdown below is so you can *check* the AI did each part, not a manual you have to follow by hand.
+**These operations are already built into Jobstead.** You don't hand-construct the backlinks, status suffixes, or Changelog formatting — you ask your AI to perform the operation in-chat ("promote the lesson from [date]", "refute the lesson from [date]: [reason]"), and Jobstead produces the correctly-formatted file. Your PR is simply the resulting diff. The breakdown below is so you can _check_ the AI did each part, not a manual you have to follow by hand.
 
 The file defines a small set of operations (see the Operations table in [§0](./Jobstead.md#0-protocol)). Here's what each produces in the file, and how it becomes a PR:
 
@@ -37,6 +37,14 @@ The AI produces Changelog entries in the file's format; if you're checking or wr
 Propose the **File version** bump in the header to match the version in your Changelog entry. Don't touch the `Schema:` field unless you've actually changed the file's structure (rare — open an issue first if you think you need to).
 
 **Versioning: propose, then it's approved at merge.** Propose the version bump and a complete Changelog entry in your PR, in the file's format. The maintainer reviews and approves the version as part of merging — confirming the number is correct and sequential. If another PR lands first and takes your proposed number, you'll rebase to the next one. This mirrors the file's rule that version-generating changes are held until explicitly confirmed: you propose, the maintainer confirms. Batch related changes under one version rather than minting a new version per small tweak — tight version history is a project norm, not just tidiness.
+
+## The derived skill follows from a contribution
+
+The repo ships two artifacts: `Jobstead.md`, the plain-chat playbook and source of truth, and a **derived Agent Skill** in `skills/jobstead/` — a distillation of the same methodology for agentic tools. The playbook leads; the skill is derived from it.
+
+A contribution changes the methodology in the playbook. Because the skill is derived from that methodology, a contribution that changes something the skill reflects **requires bringing the skill back into sync, in the same pull request** — the sync is part of completing the one change across the derived artifact, not a separate contribution. Reason about what the specific change entails for the skill rather than following a fixed list. When unsure whether something needs to propagate, surface it.
+
+The drift check (`scripts/check-drift.sh`) is the mechanical backstop — run it from the repo root before opening the PR.
 
 ## Attribution and your username
 
@@ -63,6 +71,8 @@ The headings other files depend on:
 
 If you have a strong reason to rename one of these, you must update every link in `README.md` and `NOTICE` in the same PR, and note the rename in your Changelog entry.
 
+The drift check's manifest also references playbook sections by their identifiers; renaming or renumbering a section means updating that mapping too, so the check keeps pointing at the right content.
+
 ## PR checklist
 
 Before you submit, confirm:
@@ -73,6 +83,7 @@ Before you submit, confirm:
 - [ ] One logical change
 - [ ] If it's an attributed operation (promote / refute / deprecate / add-rule), a correctly formatted Changelog entry is included
 - [ ] Version bump and Changelog entry proposed in the file's format (date + username + summary); final number confirmed by the maintainer at merge; Schema field untouched (unless structure genuinely changed)
+- [ ] If the change affects what the derived skill reflects, the skill is brought back into sync in the same PR and `sh scripts/check-drift.sh` passes (advisory items resolved or consciously accepted)
 - [ ] Creators list unchanged
 - [ ] No section headings renamed (or, if renamed, all dependent links updated)
 - [ ] Your preferred username is stated in the PR description

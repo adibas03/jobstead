@@ -8,6 +8,10 @@ If you are an AI agent or assistant: the file to load and operate from is `Jobst
 
 - [Jobstead.md](./Jobstead.md): The portable context file itself — paste it into a chat to bootstrap a job-search session. Contains the authoritative Protocol, Playbook, Lessons, and state templates.
 
+## The derived skill (for agentic tools)
+
+- [skills/jobstead/](./skills/jobstead/): An Agent Skill port of the same methodology, distilled for agentic environments (Claude Code, Codex, Copilot, and other Agent Skills hosts). It is *derived from* `Jobstead.md`, not an alternative source of truth — the playbook leads and the skill follows it. Prefer the skill in tools that support Agent Skills and a persistent filesystem (state lives in reference files rather than a re-pasted document); prefer the paste-in `Jobstead.md` in a plain chat with no filesystem.
+
 ## Orientation
 
 - [README.md](./README.md): What Jobstead is, who it's for, and a five-minute "how to use it."
