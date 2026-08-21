@@ -37,6 +37,8 @@ here for next time.
 - **AI tooling:**
 - **Other specialized:**
 
+## Adjacent experience
+
 ## Education
 
 ## Languages
@@ -44,13 +46,16 @@ here for next time.
 ## Target roles and constraints
 
 - **Open to:**
+- **Preferred employment type:**
+- **Preferred work location type:**
 - **Industry preference:**
 - **Geography:**
+- **Work authorization status:**
 - **Salary expectations:**
 
 ## Master resume
 
-*(filename or reference to the applicant's base resume)*
+_(filename or reference to the applicant's base resume)_
 
 ## Long-term projects / deferred plans
 
