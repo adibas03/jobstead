@@ -68,6 +68,7 @@ Records every change to the Playbook artifact itself. **Not** for session activi
 - `[2026-06-09] v3.4 — initiator: adibas03 — Two changes batched. (1) §0 Behavior/Principle 11 added: when meaningful unsaved state has accumulated in a session (Tracker, Profile, Sync Log entries, or held proposals under Behavior 9), Claude offers an updated copy. Judgment-based threshold, not lifecycle-triggered. Auto-accrued lessons don't trigger it on their own; suppressed after a recent output. Distinct from Behavior 10 (transient artifacts cleared) — Behavior 10 governs clearing superseded scratch work; Behavior 11 governs preventing loss of unsaved record state. (2) Schema definition added to Attribution Classification block: Schema = the file's structural contract; bump only when section layout, merge keys, operation types, or data formats change. Behavioral/Protocol changes work within existing structure and bump only the file version. Rule of thumb provided. Formalizes the convention used since v2.4. Behavioral/Protocol change (no schema change).`
 - `[2026-06-17] v3.5 — initiator: adibas03 — §0 Behavior 12 added (Save/export completeness and companion offer): when a user requests to save or export Jobstead, the model ensures any output reflects the full session within the appropriate scope, not only immediate context; where this cannot be fully achieved, the model surfaces the gap rather than producing a silent partial export; if valuable information has accumulated that does not fit any Jobstead section, the model additionally offers to save it to a single file named to indicate its relationship to Jobstead, ready for import as additional context; if accepted, the model exercises judgment on contents. "Any output" generalizes scope so completeness applies to direct exports and any companion files alike. Single-file constraint on the companion supports portability (clean import as one attachment) while retaining separation of concern (companion stays distinct from Jobstead.md). Behavioral/Protocol change (no schema change).`
 - `[2026-06-17] v3.6 — initiator: adibas03 — §1.3 Narrative-first tailoring added: before editing, identify the employer's hiring narrative and the applicant's strongest truthful narrative that answers it (focusing test: what one thing should the hiring manager remember after reading the resume?). Every resume item emits a signal — categories such as C-level role (leadership + business orientation), production-scale metrics (operational rigor), deep open-source contributions (systems thinking). Tailoring becomes signal engineering — amplifying signals reinforcing the chosen narrative and reducing emphasis on signals answering a different hiring question. Reordering, rewriting, trimming, and ATS optimization all flow from this selection. Inserted at §1.3 before tactical tailoring; downstream §1.4–§1.9 renumbered. Schema bump v2.2 → v2.3 (restructure of §1).`
+- `[2026-08-21] v3.6 — initiator: adibas03 — §3 Applicant Profile refinements (under schema v2.3): added Target-roles fields — Preferred employment type, Preferred work location type, Work authorization status — so employment/location fit dimensions are captured (supports the §1 fit-check). Renamed and generalized the "Product / UX experience" subsection to "Adjacent experience" — widened from product/UX specifically to any competency adjacent to the applicant's primary identity, with its positioning role (deployable, not the headline) stated in the Optional spec; reconciles a subsection that previously sat outside the Required/Optional lists. Propagated to the derived skill.`
 
 ---
 
@@ -262,7 +263,7 @@ Format: `[YYYY-MM-DD] Lesson statement. [STATUS-IF-ANY]`
 >
 > **Required:** identity (name, location, citizenship/work-auth, contact); career summary; technical stack with honest depth labels (production-fluent / familiar / not held); education; languages (CEFR where relevant); target roles; geographic constraints; master resume reference.
 >
-> **Optional:** public presence; specialized depth; salary expectations; long-term projects; values / red flags.
+> **Optional:** public presence; adjacent experience (real competencies beyond the primary identity, with how they position relative to it — deployable, but not the headline); salary expectations; long-term projects; values / red flags.
 
 ### Identity
 
@@ -293,7 +294,7 @@ _(empty)_
 - **AI tooling:** _(empty)_
 - **Other specialized:** _(empty)_
 
-### Experience
+### Adjacent experience
 
 _(empty)_
 

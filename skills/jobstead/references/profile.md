@@ -37,7 +37,7 @@ here for next time.
 - **AI tooling:**
 - **Other specialized:**
 
-## Experience
+## Adjacent experience
 
 ## Education
 
