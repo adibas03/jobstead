@@ -293,7 +293,7 @@ _(empty)_
 - **AI tooling:** _(empty)_
 - **Other specialized:** _(empty)_
 
-### Product / UX experience
+### Experience
 
 _(empty)_
 

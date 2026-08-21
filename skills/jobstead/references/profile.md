@@ -37,6 +37,8 @@ here for next time.
 - **AI tooling:**
 - **Other specialized:**
 
+## Experience
+
 ## Education
 
 ## Languages
@@ -53,7 +55,7 @@ here for next time.
 
 ## Master resume
 
-*(filename or reference to the applicant's base resume)*
+_(filename or reference to the applicant's base resume)_
 
 ## Long-term projects / deferred plans
 
