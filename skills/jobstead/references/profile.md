@@ -44,8 +44,11 @@ here for next time.
 ## Target roles and constraints
 
 - **Open to:**
+- **Preferred employment type:**
+- **Preferred work location type:**
 - **Industry preference:**
 - **Geography:**
+- **Work authorization status:**
 - **Salary expectations:**
 
 ## Master resume
