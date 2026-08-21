@@ -2,7 +2,7 @@
 
 _The community-grown job-search playbook you own and carry: hard-won lessons and tailoring strategy in one portable markdown file, AI-ready for any chat._
 
-**File version:** 3.6 · **Schema:** v2.3 · **Last synced:** 2026-08-12
+**File version:** 3.6 · **Schema:** v2.3 · **Last synced:** 2026-08-21
 
 Jobstead is a portable, mergeable context for an AI-assisted job search. Paste it into a new chat to bootstrap, share it between users running the same playbook, merge it with other copies without losing information.
 
