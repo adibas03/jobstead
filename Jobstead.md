@@ -231,17 +231,28 @@ Status suffix (optional, but a `[REFUTED]` suffix's reason is required): `(none)
 Format: `[YYYY-MM-DD] Lesson statement. [STATUS-IF-ANY]`
 
 - `[2026-05-26]` "Remote [single country]" in a job ad nearly always means "must be authorized to work in that country." Treat as a hard filter unless sponsorship is explicitly mentioned. `[PROMOTED v1.0]`
-- `[2026-05-26]` UK Skilled Worker visa carries a minimum salary floor that scales by role and updates periodically; software engineer "going rate" thresholds sit well above the general floor. **As of 2026-05: ~£38,700 general, ~£52,700 SWE going-rate — verify current figures on gov.uk before relying on them.** Any UK role offering "visa sponsorship" with salary far below the general floor is structurally impossible — either a misunderstanding or a scam. `[PROMOTED v1.0]`
-- `[2026-05-26]` Singapore Public Service roles (statutory boards, ministries) are citizen/PR-first; defence/security/intelligence bodies are citizen-only. GovTech is the principal exception — it can hire foreigners for specialist tech roles, but the Employment Pass justification bar is high. **Specific body names and policies shift; treat as a pattern (public-sector = local-first, defence = citizen-only) and verify the current exception list rather than the named bodies.** `[PROMOTED v1.0]`
-- `[2026-05-27]` ATS-scoring tools (e.g. Jobscan) paywall full results but expose enough free signal to act on: missing keywords, structural flags, exact-title-match issues. The missing-keywords list is the most useful free output. `[PROMOTED v1.0]`
-- `[2026-05-28]` Honest gap-acknowledgment in a cover letter (e.g., "I don't read Ruby yet; here's my ramp plan") reads as confidence, not weakness. Observed across three real-fit applications; none auto-rejected on it. `[PROMOTED v1.0]`
-- `[2026-05-28]` 48-hour submission rule: a strong-fit role expired during an additional-polish window. Submit tailored materials fast on strong-fit roles. `[PROMOTED v1.0]`
-- `[2026-06-09]` ATS-scoring tools' paywalled full reports typically offer diminishing return on a per-application basis — the free-tier missing-keywords list and structural flags capture the actionable subset. Useful corollary to the 2026-05-27 lesson: don't pay per scan unless you're optimizing across many applications.
+- `[2026-05-26]` Visa-sponsoring countries often set salary floors that scale by role, with
+  going-rate thresholds for specialist roles sitting well above the general floor. A sponsorship
+  offer paired with a salary far below the general floor is structurally implausible — verify
+  current figures on the relevant government site rather than trusting the posting. `[PROMOTED v1.0]`
+- `[2026-05-26]` Public-sector roles (statutory boards, ministries) tend to be citizen/PR-first;
+  defence, security, and intelligence bodies are typically citizen-only. Some specialist tech
+  agencies are exceptions but the bar is high — treat "public-sector = local-first" as the pattern
+  and verify the current exception list rather than relying on a remembered name. `[PROMOTED v1.0]`
+- `[2026-05-27]` ATS-scoring tools often paywall full results but expose enough for free to act on
+  — missing keywords and structural flags. The missing-keywords list is usually the most useful
+  free output. `[PROMOTED v1.0]`
+- `[2026-05-28]` 48-hour submission rule: A strong-fit role can expire during an unnecessary extra-polish window. When the
+  fit is genuinely strong, submit fast rather than optimizing further. `[PROMOTED v1.0]`
+- `[2026-05-28]` Honest gap-acknowledgment in a cover letter (e.g. "I don't have production Ruby
+  experience yet; here's my ramp plan") tends to read as confidence rather than weakness.
+- `[2026-06-09]` Paywalled full ATS reports tend to have diminishing returns per application — the
+  free-tier missing-keywords list and structural flags capture most of the actionable signal.
+  Worth paying for a scan only when optimizing across many applications at once, not per-role.
 - `[2026-06-09]` Cold-outreach emails referencing real roles at real companies can still be phishing imitations — the role/URL legitimacy and the sender legitimacy are separable. A mailer-daemon bounce on a reply to such outreach is strong confirmation the sender was not real: legitimate recruiter mailboxes don't vanish within days. The defensive move is to apply via the official ATS portal directly; the email channel is optional and skippable.
 - `[2026-06-10]` Soft filters that compound — degree mismatch, under-leveled IC title, off-thesis domain — function effectively as a hard filter in aggregate even when each is individually waivable. When 3+ soft filters fail together at the same role, treat as a structural skip rather than a discretionary one. Pattern observed across mid-senior IC roles at established European tech companies.
-- `[2026-06-10]` Sub-24-hour rejections on senior IC applications are almost always mechanical screening (location/visa hard filter, ATS auto-screen), not substantive review of the application. Reading them as judgments on application quality is incorrect — they're judgments on whether the application cleared the basic structural screen. Corollary to 2026-05-26: when location dropdowns don't include the applicant's location, honest acknowledgment of the gap in a cover letter does not overcome the screen. The application either matches the form's location options or it doesn't.
+- `[2026-06-10]` Sub-24-hour rejections on applications are likely mechanical screening (location/visa hard filter, ATS auto-screen), not substantive review of the application. Reading them as judgments on application quality is incorrect — they're judgments on whether the application cleared the basic structural screen. Corollary to 2026-05-26: when location dropdowns don't include the applicant's location, honest acknowledgment of the gap in a cover letter does not overcome the screen. The application either matches the form's location options or it doesn't.
 - `[2026-07-03]` Employment type and work location type are basic fit dimensions that belong in every §1.1 fit-check. Omitting them from the check — and from the Applicant Profile — means roles can pass fit-check on all listed criteria while being structurally incompatible on dimensions nobody thought to verify. Thoroughness in fit-checking requires the checklist itself to be complete, not just consistently applied. `[PROMOTED v3.6]`
-- `[2026-08-12]` Application form right-to-work dropdowns are the most reliable signal of actual work authorization requirements — more reliable than the JD or aggregator listing. A binary "do you hold the right to work in X?" dropdown with no Other/sponsorship option is a hard gate regardless of what the JD says. An "Other — please provide additional information" free-text field alongside the dropdown signals a potential pathway worth exploring. Always check the form before investing in materials for a role with ambiguous work authorization language.
 
 ---
 
