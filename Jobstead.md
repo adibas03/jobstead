@@ -2,7 +2,7 @@
 
 _The community-grown job-search playbook you own and carry: hard-won lessons and tailoring strategy in one portable markdown file, AI-ready for any chat._
 
-**File version:** 3.6 · **Schema:** v2.3 · **Last synced:** 2026-08-21
+**File version:** 3.7 · **Schema:** v2.3 · **Last synced:** 2026-11-23
 
 Jobstead is a portable, mergeable context for an AI-assisted job search. Paste it into a new chat to bootstrap, share it between users running the same playbook, merge it with other copies without losing information.
 
@@ -69,6 +69,7 @@ Records every change to the Playbook artifact itself. **Not** for session activi
 - `[2026-06-17] v3.5 — initiator: adibas03 — §0 Behavior 12 added (Save/export completeness and companion offer): when a user requests to save or export Jobstead, the model ensures any output reflects the full session within the appropriate scope, not only immediate context; where this cannot be fully achieved, the model surfaces the gap rather than producing a silent partial export; if valuable information has accumulated that does not fit any Jobstead section, the model additionally offers to save it to a single file named to indicate its relationship to Jobstead, ready for import as additional context; if accepted, the model exercises judgment on contents. "Any output" generalizes scope so completeness applies to direct exports and any companion files alike. Single-file constraint on the companion supports portability (clean import as one attachment) while retaining separation of concern (companion stays distinct from Jobstead.md). Behavioral/Protocol change (no schema change).`
 - `[2026-06-17] v3.6 — initiator: adibas03 — §1.3 Narrative-first tailoring added: before editing, identify the employer's hiring narrative and the applicant's strongest truthful narrative that answers it (focusing test: what one thing should the hiring manager remember after reading the resume?). Every resume item emits a signal — categories such as C-level role (leadership + business orientation), production-scale metrics (operational rigor), deep open-source contributions (systems thinking). Tailoring becomes signal engineering — amplifying signals reinforcing the chosen narrative and reducing emphasis on signals answering a different hiring question. Reordering, rewriting, trimming, and ATS optimization all flow from this selection. Inserted at §1.3 before tactical tailoring; downstream §1.4–§1.9 renumbered. Schema bump v2.2 → v2.3 (restructure of §1).`
 - `[2026-08-21] v3.6 — initiator: adibas03 — §3 Applicant Profile refinements (under schema v2.3): added Target-roles fields — Preferred employment type, Preferred work location type, Work authorization status — so employment/location fit dimensions are captured (supports the §1 fit-check). Renamed and generalized the "Product / UX experience" subsection to "Adjacent experience" — widened from product/UX specifically to any competency adjacent to the applicant's primary identity, with its positioning role (deployable, not the headline) stated in the Optional spec; reconciles a subsection that previously sat outside the Required/Optional lists. Propagated to the derived skill.`
+- `[2026-11-23] v3.7 — initiator: adibas03 — §1.10 Profile intake added: record the boundary with the claim — establish where something was done, at what depth, and which part was someone else's, before recording it in §3, and write that edge into the claim itself. An unbounded claim reads as production-depth ownership to whoever writes the next resume. §1.9 "Don't overclaim depth" cross-references it, separating output-stage framing from intake-stage recording. Promoted from the §2 2026-11-23 lesson.`
 
 ---
 
@@ -215,9 +216,17 @@ If present, **verify on the country's official sponsor register** before any fur
 ### 1.9 Honest framing principles
 
 - **Don't fake credentials** — degrees, certifications, citizenship.
-- **Don't overclaim depth** — sparse experience flagged "familiar with" or omitted, not listed as a strength.
+- **Don't overclaim depth** — sparse experience flagged "familiar with" or omitted, not listed as a strength. (See §1.10 for recording depth at intake, so the Profile does not hand the next resume an unbounded claim.)
 - **Don't hide structural blockers** — location, work auth, title gap. They surface in screen calls; surface them in the cover letter instead.
 - **Don't lead with the weakest area.** Play to strengths; don't stretch to fill every keyword.
+
+### 1.10 Profile intake
+
+- **Record the boundary with the claim.** Before recording anything in §3, establish where it was done, at what depth, and which part was someone else's, then write that edge into the claim. "Card payments" becomes "recorded card transactions; a provider processed them and partners adjudicated disputes." "Kubernetes" becomes "explored, never deployed to production."
+- **An unbounded claim reads as production-depth ownership** to whoever writes the next resume, and travels across every application before anyone notices.
+- **Grouped and affirmative answers are where this slips** — "yes to all", a list of four, a title that implies more than the job did. Ask what the person did, not what the category is called.
+
+_Origin lesson: §2 2026-11-23._
 
 ---
 
@@ -254,6 +263,9 @@ Format: `[YYYY-MM-DD] Lesson statement. [STATUS-IF-ANY]`
 - `[2026-06-10]` Soft filters that compound — degree mismatch, under-leveled IC title, off-thesis domain — function effectively as a hard filter in aggregate even when each is individually waivable. When 3+ soft filters fail together at the same role, treat as a structural skip rather than a discretionary one. Pattern observed across mid-senior IC roles at established European tech companies.
 - `[2026-06-10]` Sub-24-hour rejections on applications are likely mechanical screening (location/visa hard filter, ATS auto-screen), not substantive review of the application. Reading them as judgments on application quality is incorrect — they're judgments on whether the application cleared the basic structural screen. Corollary to 2026-05-26: when location dropdowns don't include the applicant's location, honest acknowledgment of the gap in a cover letter does not overcome the screen. The application either matches the form's location options or it doesn't.
 - `[2026-07-03]` Employment type and work location type are basic fit dimensions that belong in every §1.1 fit-check. Omitting them from the check — and from the Applicant Profile — means roles can pass fit-check on all listed criteria while being structurally incompatible on dimensions nobody thought to verify. Thoroughness in fit-checking requires the checklist itself to be complete, not just consistently applied. `[PROMOTED v3.6]`
+- `[2026-08-24]` A long-running conversation is not a single day. An assistant that establishes the date once at session start and carries it forward will silently misdate every artifact it writes for the rest of the thread — and the error is invisible in-conversation, surfacing only later as corrupted log ordering. Re-check the actual date at the point of writing any dated record, not at the point the conversation opened. File modification timestamps in a working environment are not a reliable date source — they can drift from the true date. Use the date the environment states, and corroborate against an external dated artifact where one is available.
+- `[2026-10-27]` When a job description names a technology alongside alternatives — "deep X experience is a strong signal of the pragmatism we want, so is having done Y, or Z" — the technology is a proxy for a trait, not a requirement. Read the sentence structure before recording a gap: the employer has already told you what they are measuring and offered more than one way to evidence it. An applicant missing the headline technology may hold two of the three named proxies, which could be a stronger position than a partial match on the first. Check the alternatives before treating the named tool as a filter.
+- `[2026-11-23]` **A capability sweep that collects lists produces unlabelled claims; one that asks where something ran produces accurate ones.** Two corrections in three weeks (a compliance regime, a container orchestrator) had the same cause: the capability was named in a grouped answer and recorded at face value, with no question about whether it reached production or merely got explored. Both then propagated across many submitted artifacts before the applicant caught them. The fix is at intake rather than at review: for any tool, platform or regime, ask where it ran and who operated it before recording it, and label depth in the entry the way Terraform was labelled "light/intermediate" from the start. An unlabelled entry will be read as production by whoever writes the next resume. [PROMOTED v3.7]
 
 ---
 
