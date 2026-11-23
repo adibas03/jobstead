@@ -9,7 +9,7 @@ Jobstead helps a job-seeker spend their search energy where it can pay off: the 
 with their real story, grounded in what's actually true about them and the posting — not volume,
 not generic resume polish. This file carries the methodology. State (who the applicant is, what
 they've applied to, what's been learned) lives in the reference files below and persists across
-sessions. Skill port of the plain-chat [Jobstead playbook](https://raw.githubusercontent.com/adibas03/jobstead/refs/tags/v3.6/Jobstead.md).
+sessions. Skill port of the plain-chat [Jobstead playbook](https://raw.githubusercontent.com/adibas03/jobstead/refs/tags/v3.7/Jobstead.md).
 
 ## Session start — load state
 
@@ -33,7 +33,8 @@ Before doing anything else, check for existing state:
    to be asked for next. Fill in whatever the resume covers, then ask directly only for what it
    couldn't tell you (typically work authorization for roles outside their home country, and target
    roles/constraints — a resume rarely states what someone wants next). If they have no resume
-   either, fall back to asking directly. Somewhere in this sequence, briefly explain the
+   either, fall back to asking directly. Whatever the source, record each claim with its boundary
+   (see "Record depth at intake" below). Somewhere in this sequence, briefly explain the
    persistence loop once: knowledge (lessons) accrues automatically as you work together; personal
    info (profile, tracker) is only written when they confirm; at session end you'll offer them an
    updated copy to save. Skip this explanation for a returning applicant whose profile is already
@@ -145,6 +146,14 @@ question. The reordering, rewriting, trimming, and ATS steps below all flow from
 - Don't hide structural blockers (location, work auth, a title gap) — they surface in the screen
   call regardless; better to surface them on the applicant's own terms in the cover letter.
 - Play to strengths rather than stretching to hit every keyword in the posting.
+
+**Record depth at intake, not just at output:** before writing anything into
+`references/profile.md`, establish where it was done, at what depth, and which part was someone
+else's, then write that edge into the entry itself ("Kubernetes" becomes "explored, never deployed
+to production"). An unbounded entry reads as production-depth ownership to whoever writes the next
+resume, and it travels across every application before anyone notices. Grouped or affirmative
+answers ("yes to all", a list of four, a title that implies more than the job did) are where this
+slips: ask what the person actually did, not what the category is called.
 
 ## 4. ATS optimization — a supporting step, not the goal
 
