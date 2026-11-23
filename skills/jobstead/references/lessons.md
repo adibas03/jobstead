@@ -35,3 +35,22 @@ anything with a specific figure or named policy before relying on it, since thes
 - `[2026-06-10]` Soft filters that compound — degree mismatch, under-leveled IC title, off-thesis domain — function effectively as a hard filter in aggregate even when each is individually waivable. When 3+ soft filters fail together at the same role, treat as a structural skip rather than a discretionary one. Pattern observed across mid-senior IC roles at established European tech companies.
 - `[2026-06-10]` Sub-24-hour rejections on applications are likely mechanical screening (location/visa hard filter, ATS auto-screen), not substantive review of the application. Reading them as judgments on application quality is incorrect — they're judgments on whether the application cleared the basic structural screen. Corollary to 2026-05-26: when location dropdowns don't include the applicant's location, honest acknowledgment of the gap in a cover letter does not overcome the screen. The application either matches the form's location options or it doesn't.
 - `[2026-07-03]` Employment type and work location type are basic fit dimensions that belong in every fit-check. Omitting them from the check — and from the applicant's profile — means roles can pass on all listed criteria while being structurally incompatible on dimensions nobody thought to verify. Thoroughness in fit-checking requires the checklist itself to be complete, not just consistently applied.
+- `[2026-08-24]` A long-running conversation is not a single day. Establishing the date once at
+  session start and carrying it forward silently misdates every record written later in the thread,
+  and the error only surfaces later as corrupted log ordering. Re-check the actual date when writing
+  any dated record. File modification timestamps are not a reliable date source; use the date the
+  environment states, corroborated against an external dated artifact where one is available.
+- `[2026-10-27]` When a job description names a technology alongside alternatives ("deep X
+  experience is a strong signal of the pragmatism we want, so is having done Y, or Z"), the
+  technology is a proxy for a trait, not a requirement. Read the sentence structure before
+  recording a gap: an applicant missing the headline technology may hold two of the named proxies,
+  which can be a stronger position than a partial match on the first.
+- `[2026-11-23]` A capability sweep that collects lists produces unlabelled claims; one that asks
+  where something ran produces accurate ones. When a capability is named in a grouped answer and
+  recorded at face value, nothing establishes whether it reached production or was only explored.
+  The unlabelled entry then propagates across submitted artifacts, often several before anyone
+  notices, and the correction lands after the damage. Recurring corrections of this kind tend to
+  share one cause, and it sits at intake rather than review: for any tool, platform or regime, ask
+  where it ran and who operated it before recording it, and label depth in the entry from the start
+  (e.g. "light/intermediate", "explored, never in production"). An unlabelled entry will be read as
+  production by whoever writes the next resume.
