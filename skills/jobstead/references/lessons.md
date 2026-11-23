@@ -46,7 +46,11 @@ anything with a specific figure or named policy before relying on it, since thes
   recording a gap: an applicant missing the headline technology may hold two of the named proxies,
   which can be a stronger position than a partial match on the first.
 - `[2026-11-23]` A capability sweep that collects lists produces unlabelled claims; one that asks
-  where something ran produces accurate ones. Capabilities named in a grouped answer and recorded at
-  face value, with no question about whether they reached production, tend to propagate across many
-  submitted artifacts before anyone catches them. Fix it at intake: for any tool, platform or
-  regime, ask where it ran and who operated it, and label depth in the entry from the start.
+  where something ran produces accurate ones. When a capability is named in a grouped answer and
+  recorded at face value, nothing establishes whether it reached production or was only explored.
+  The unlabelled entry then propagates across submitted artifacts, often several before anyone
+  notices, and the correction lands after the damage. Recurring corrections of this kind tend to
+  share one cause, and it sits at intake rather than review: for any tool, platform or regime, ask
+  where it ran and who operated it before recording it, and label depth in the entry from the start
+  (e.g. "light/intermediate", "explored, never in production"). An unlabelled entry will be read as
+  production by whoever writes the next resume.
